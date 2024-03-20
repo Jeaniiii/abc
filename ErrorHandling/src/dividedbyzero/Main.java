@@ -1,14 +1,15 @@
 package dividedbyzero;
 
-public class Main {
+public class main {
 
-	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
-	try {
-		System.out.println(3/0);
-		}
-	catch(Exception e) {
-	System.out.printf("Caught runtime exception:%s%n",e);
-}
-}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        try {
+            System.out.println(3/0);
+        } catch (ArithmeticException e) {
+            System.out.printf("Caught runtime exception = %s\n", e.getMessage());
+        }
+    }
 }
